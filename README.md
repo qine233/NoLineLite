@@ -3,6 +3,7 @@
 ###### 可以点一个项目的star，鼓励一下开发者哦！
  ![.....](https://img.shields.io/github/downloads/qine233/NoLineLite/total.svg?style=flat-square)
 #### 主题文件夹务必命名为Noline , 在release内可以看到近期更新日志（暂定）
+##### 暂定更新：
 1. 暂定下次更新内容，手机以及pc端文章展示样式优化与精简
 2. 部分评论样式优化，暂不做1.3版本适配
 ##### 并且开启如下评论设置：
