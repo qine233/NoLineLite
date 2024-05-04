@@ -55,7 +55,7 @@
                     background-position-x: center;
                     background-position-y: center;
                     background-size: cover;">
-                    <?php
+                    <!-- <?php
                     preg_match_all("/\<img.*?src\=(\'|\")(.*?)(\'|\")[^>]*>/i", $this->content, $matches);
                     $imgCount = count($matches[0]);
                     if ($imgCount >= 1) {
@@ -65,7 +65,7 @@
                     };
                     $CCimg = "<p class='post-images'><a href='{$this->permalink}' title='{$this->title}'><img src='{$img}' alt='{$this->title}'></a></p>";
                     echo $CCimg;
-                    ?>
+                    ?> -->
 
                 </div>
                 <h2 class="entry_title"><a href="<?php $this->permalink() ?>"><?php $this->title() ?></a></h2>

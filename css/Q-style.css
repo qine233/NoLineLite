@@ -86,7 +86,7 @@ a:hover {
 }
 .header {
     position: fixed;
-    padding: 0 10% 0 3%;
+    padding: 0 11% 0 9%;
     /*filter: blur(5px);*/
     box-shadow: 0 4px 8px 0 rgb(7 17 27 / 10%);
     top: 0;
@@ -117,7 +117,7 @@ a:hover {
 #nav_menu {
     display: inline-flex;
     margin-left:12rem ;
-    color: #ffffff;
+    color: #000000;
 }
 #nav_menu ul{padding-top: 1rem;
 }
@@ -173,17 +173,17 @@ a:hover {
 
 .post_index-more{
     display: block;
-    background: #9cd2ff3b;
+    background: #9cd2ff6b;
     padding: 1 5;
-    margin-left: 8%;
     position: relative;
     top: -35px;
-    color: #2b4764a1;
-    border-radius: 1.8rem;
+    right: -70%;
+    color: #007bffe6;
+    border-radius: 0.5rem;
     backdrop-filter: blur(16px);
     max-width: 15rem;
     text-align: center;
-    box-shadow: 0 4px 10px rgb(26 72 162 / 17%), 0 0 1px rgb(42 78 244 / 40%);
+    box-shadow: 0 4px 10px rgb(26 72 162 / 0%), 0 0 1px rgb(42 78 244 / 21%);
 }
 .post_index-more a{
     color: white  !important;
@@ -200,7 +200,7 @@ header h1 {
 
 .header a {
 
-    color: rgb(255 255 255);
+    color: rgb(0 0 0);
     text-decoration: none;
 
 }
@@ -599,6 +599,7 @@ footer .nav_top{
 .content .post {
     overflow: hidden;
     display: flex;
+    height: 19rem;
     flex-wrap: wrap;
     /* padding-top: 1px; */
     /*padding-left: 25px;*/
@@ -740,40 +741,23 @@ footer .nav_top{
 }
 .content .entry_text {
     height: 12rem;
-    /* width: 10rem; */
-    /* overflow: hidden; */
     text-overflow: ellipsis;
     font-size: 1.3rem;
     font-weight: 400;
-    /* margin-top: -10px; */
+
     margin-left: 5.7rem;
-    margin-bottom: 2.2rem;
+    margin-bottom: -2.8rem;
     color: rgb(31 40 53 / 79%);
     overflow: hidden;
-    /* display: contents; */
-    /* display: block; */
-    width: 44%;
+    width: 87%;
+
+
     -webkit-box-orient: vertical;
     padding-right: 10px;
     position: relative;
     top: -36px;
     z-index: 2;
 }
-
-/* .content .entry_text li{
-
-    word-break: break-all;
-    overflow:hidden;
-text-overflow:ellipsis;
-display:-webkit-box;
--webkit-box-orient:vertical;
--webkit-line-clamp:2;
-} */
-
-/*.content .entry_text::marker {*/
-/*    display: none;*/
-
-/*}*/
 
 
 
@@ -792,17 +776,15 @@ display:-webkit-box;
     letter-spacing: 1px;
      position: relative;
     top: -45px;
-    /* left: 8px; */
-    margin-top: -20.2rem;
+    margin-top: -16.2rem;
     font-size: 1.7rem;
     overflow: hidden;
-    width: 45%;
+    width: 87%;
     height: 2rem;
     text-overflow: ellipsis;
     display: -webkit-box;
     padding-left: 5px;
     -webkit-line-clamp: 1;
-    /* overflow: hidden; */
     -webkit-box-orient: vertical;
     border-style: solid;
     border-right: none;
@@ -816,13 +798,9 @@ display:-webkit-box;
 }
 
 .content .entry_data {
-    /* position: relative;left: 250px;
-    margin-left:220px;
-    margin-top: 15px;
-    font-size: 15px;
-    color: rgb(65, 61, 61); */
+  
     width: 25%;
-    /* position: relative; top: -55px;right: -40rem; */
+   
     position: relative;
     left: -66%;
     top: 10rem;
@@ -835,7 +813,7 @@ display:-webkit-box;
 .content .entry_data ul {
 
     color: #ffffff;
-    /* margin-right:15px ; */
+  
     display: flex;
 
     flex-flow: row wrap;
@@ -845,25 +823,17 @@ display:-webkit-box;
 .content .entry_data li {
     height: 1.2rem !important;
     background: #a3cfff;
-    /*display: inline;*/
     letter-spacing: 2px;
     margin-left: 15px;
     padding-left: 5px;
     list-style: none;
     display: block;
     font-size: 12px;
-    /*padding-top: 4px;*/
     font-weight:400;
-    /* color: white; */
-    /*color: rgb(83, 83, 83);*/
     color: #ffffff;
-    /* margin-right: 10px; */
     text-align: center;
     height: 1.5rem !important;
-    /*
-        width: 5rem; */
-    /* background-color: rgba(221, 221, 221, 0.842); */
-    /* margin-top: 10px; */
+    
     border-style: solid;
     border-right: none;
     border-top: none;
@@ -1161,7 +1131,7 @@ hr {
 
 .post-images {
     width: 90rem;
-    height: 20rem;
+    height: 15rem;
     margin: 15px 54px !important;
     background: #ffffff;
     transform: scale(1.2);

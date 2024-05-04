@@ -102,7 +102,9 @@
         height: 1000px;
     }
 .post_index-more{
-    top: -57px;
+    top: -32px;
+    right: -52%;
+    padding: 1 1;
 }
 
     .closebtn {
@@ -110,46 +112,35 @@
         margin-top: 10rem;
     }
     .content .post{
-        background: #ffffff00;
-        box-shadow: none;
-        border-radius: 0.1rem;
+        overflow: hidden;
+        display: flex;
+        height: 15rem;
+        flex-wrap: wrap;
+        color: rgba(65, 65, 65, 0.767);
+        background: white;
+        border-radius: 0.5rem;
+        color: rgba(0, 0, 0, 0.856);
+        margin-bottom: 34px;
+        border-width: 1px;
+        box-shadow: 0 4px 10px rgb(0 0 0 / 5%), 0 0 1px rgb(0 0 0 / 10%);
     }
     .content  .entry_title {
         position: relative;
-        /* top: -4.7rem; */
         left: 1rem;
-        /* margin-left: -13px; */
         letter-spacing: 0.1px !important;
         font-size: 1.3rem !important;
         height: 1.5rem !important;
-        width: 19rem !important;
-        margin-top: -17.7rem;
+        width: 87% !important;
+        margin-top: -12.5rem;
         margin-left: 1.2rem;
     }
-
-    /*.post-images img {*/
-    /*    margin-top: 1.2rem;*/
-    /*    margin-left: 9rem;*/
-
-    /*    width: 11.5rem;*/
-    /*    height: 7.5rem;*/
-    /*    border-radius: 0.5rem;*/
-    /*    object-fit: cover;*/
-
-    /*    opacity: 0.9;*/
-
-    /*    !* transform: scale(1.2); *!*/
-    /*}*/
-
     .nav-page {
         margin-left: -3rem;
     }
-
     .entry_data {
-font-size: 0.7rem;
+        font-size: 0.7rem;
         display: flex;
-
-width: 10rem;
+        width: 10rem;
         margin-top: 6.7rem !important;
         margin-left: -21rem !important;
         position: unset !important;
@@ -163,22 +154,19 @@ width: 10rem;
     box-shadow: 0 4px 10px rgb(0 0 0 / 5%), 0 0 1px rgb(0 0 0 / 10%);
 }
         .content .entry_data li {
-            /*display: inline;*/
-        /* padding: 0; */
+    
         width: 6.5rem !important;
         height: 1.5rem !important;
         font-size: 8px;margin-left: -1rem;
     }
     .content .entry_text {
         font-size: 1.2rem;
-        margin-bottom: 5.5rem;
+        margin-bottom: 0.5rem;
         margin-left: 3.4rem !important;
     }
     .content .entry_data ul {
         display: block !important;
-        /*margin-top: 8rem!important;*/
         width: 10rem !important;
-
     }
 
     .comments {

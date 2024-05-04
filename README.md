@@ -1,16 +1,15 @@
+# 
 # TYPECHO主题-NoLineLite   
-###  💬优化阅读，爱上写作  |   原项目地址-->[Noline](https://github.com/qine233/NoLine-Typecho-theme);
-###### 本项目为Noline的衍生项目（原项目暂不更新），可以解释为精简版
- ![.....](https://img.shields.io/github/downloads/qine233/NoLineLite/total.svg?style=flat-square)
-#### 主题文件夹务必命名为Noline , 在release内可以看到近期更新日志（暂定）
-##### 暂定更新：
-      1. 暂定下次更新内容，手机以及pc端文章展示样式优化与精简
-      2. 部分评论样式优化，暂不做1.3版本适配
-      3. 项目结构优化（放在后面5次更新次内）
+###  💬优化阅读，爱上写作
+###### 可以点一个项目的star，鼓励一下开发者哦！
+ ![.....](https://img.shields.io/github/downloads/qine233/NoLine-Typecho-theme/total.svg?style=flat-square)
+ ![.....](https://img.shields.io/github/v/release/qine233/NoLine-Typecho-theme.svg?style=flat-square)
+#### 主题文件夹务必命名为Noline , 在release内可以看到近期更新日志
+#### 主题预览：https://www.idkzr.com/   ，本主题建议typecho版本不高于1.2，在使用1.3的时候部分功能未适配
+#### 关于使用名称为 时光的 自定义页面，需要在后台中关闭评论反垃圾！！
 ##### 并且开启如下评论设置：
-      1. 启用分页, 并且每页显示 8篇评论, 在列出时将 第一页作为默认显示
-      2. 将 较新的的评论显示在前面
-      3. 关于使用名称为 时光的 自定义页面，需要在后台中关闭评论反垃圾！！
+      1.  启用分页, 并且每页显示 8篇评论, 在列出时将 第一页作为默认显示
+      2.  将 较新的的评论显示在前面
 ##### 目前这款主题用到了bootstrap框架，highlights代码高亮等
       1. 响应式布局，移动端舒适体验
       2. 主题足够轻量
