@@ -106,55 +106,64 @@
             let validH = totalH - clientH;
             let scrollH = document.body.scrollTop || document.documentElement.scrollTop;
             if (scrollH == 0){
-                percentage.innerHTML = '<div style="font-size: 1.7rem;">0%</div>';
+                percentage.innerHTML = '<svg t="1670852398118" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1073" width="32" height="32"><path d="M38.167273 747.054545c-8.610909 0-16.989091-3.025455-23.738182-9.30909-14.196364-13.265455-14.894545-35.141818-1.629091-49.338182L486.4 180.363636c13.265455-14.196364 37.934545-14.196364 50.967273 0l473.832727 507.810909a34.909091 34.909091 0 0 1-1.629091 49.338182c-13.963636 13.032727-36.072727 12.334545-49.338182-1.629091L512 255.534545 63.534545 735.883636c-6.749091 7.447273-16.058182 11.170909-25.367272 11.170909z" p-id="1074" fill="#8a8a8a"></path></svg>';
             }else{
                 let fullWindowHeightInPercentage = Math.round((scrollH / validH) * 100);
-                percentage.innerHTML = '<div style="font-size: 1.7rem;">' + fullWindowHeightInPercentage + '<span >%<span></div>';
-                if (fullWindowHeightInPercentage == 0) percentage.innerHTML = '<div style="font-size: 1.7rem;">0%</div>';
-                if (fullWindowHeightInPercentage >= 100) percentage.innerHTML = '<div style="font-size: 1.7rem;">100%</div>';
+                percentage.innerHTML = '<div style="font-size: 1.8rem;">' + fullWindowHeightInPercentage + '<span style="font-size:small;">%<span></div>';
+                if (fullWindowHeightInPercentage == 0) percentage.innerHTML = '<svg t="1670852398118" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1073" width="32" height="32"><path d="M38.167273 747.054545c-8.610909 0-16.989091-3.025455-23.738182-9.30909-14.196364-13.265455-14.894545-35.141818-1.629091-49.338182L486.4 180.363636c13.265455-14.196364 37.934545-14.196364 50.967273 0l473.832727 507.810909a34.909091 34.909091 0 0 1-1.629091 49.338182c-13.963636 13.032727-36.072727 12.334545-49.338182-1.629091L512 255.534545 63.534545 735.883636c-6.749091 7.447273-16.058182 11.170909-25.367272 11.170909z" p-id="1074" fill="#8a8a8a"></path></svg>';
+                if (fullWindowHeightInPercentage >= 100) percentage.innerHTML = '<svg t="1670852648630" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="839" width="32" height="32"><path d="M766.08 880.896l-226.56-111.104a34.176 34.176 0 0 1 29.888-61.44l185.792 91.264 80.192-549.12-361.216 433.408v201.408a34.112 34.112 0 0 1-68.16 0V672.64a35.072 35.072 0 0 1 8.128-23.296l340.224-408.384-545.536 283.072 128.576 66.688a35.2 35.2 0 0 1 15.296 46.592 33.152 33.152 0 0 1-44.288 15.36L122.432 555.84a35.008 35.008 0 0 1-15.936-17.024 33.856 33.856 0 0 1 14.016-45.696L870.08 104.32a35.2 35.2 0 0 1 16.192-3.904c16.704-0.32 31.104 11.52 34.112 27.904a35.392 35.392 0 0 1-0.64 16.512l-103.68 710.08a34.24 34.24 0 0 1-28.864 28.992 33.408 33.408 0 0 1-21.12-3.008z" p-id="840" fill="#8a8a8a"></path></svg>';
             }
             $('#percentage').on('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
-             $(document).on('scroll', function () {
-                if ($(document).scrollTop() <= 380) {
-            //         Ncolor.style.cssText= "color:rgb(53 75 96);";
-                    NcolorTWO.style.cssText= "color:rgb(53 75 96);";
+            $(document).on('scroll', function () {
+                if ($(document).scrollTop() <= 170) {
+                    Ncolor.style.cssText= "color:#000000;";
+                    NcolorTWO.style.cssText= "color:#000000;";
                     $('.header').addClass('nobg').removeClass('hasbg');
 
-                 } else {
-            //         Ncolor.style.cssText= "color:#000000;";
-                    NcolorTWO.style.cssText= "color:rgb(53 75 96);";
+                } else {
+                    Ncolor.style.cssText= "color:#000000;";
+                    NcolorTWO.style.cssText= "color:#000000;";
                     $('.header').removeClass('nobg p1').addClass('hasbg');
                 }
-             });
+            });
         };
     </script>
 
 </head>
 <body>
-<div class="content-all center-block">
+<div class="background-img" id="background-img" >
+<header class="header " id="backgroundHeader" >
+    <div class="header-wide">
+        <div id="box_hover" ><svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></div>
 
-<div class="content-last">
-  <div class="contact border-wid">
-      
-    <div class="bg_color" style="background: url(<?php $this->options->logobgcolor(); ?>);
-            background-position-x: center;
-            background-position-y: center;
-            background-size: cover;
-            object-fit: cover;
-            border-radius: 1.9rem 1.9rem 0 0;
-            ">
-  <!-- <h1 class="contact-h1">#社交频道</h1> -->
-  <img class="logo" src="<?php $this->options->logoCss(); ?>">
-  <h2 id="nevColor" href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title(); ?></h2>
-  <span><h2 class="name-talk"><?php $this->options->logobg(); ?></h2></span>
-    </div>
- <!-- <button class="a-left"><a target="_blank" href="<?php $this->options->logocontacta(); ?>">关注</a></button> -->
-             <div class="sibar-data-a">
+        <h1>
+            <a id="nevColor" href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title(); ?></a>
 
-           
-            </div>
+        </h1>
 
+        <ul  id="nav_menu">
+
+
+            <?php $this->widget('Widget_Contents_Page_List')
+                ->parse('<li><a id="nevColorTWO" style="color: inherit" href="{permalink}">{title}</a></li>'); ?>
+        </ul></div>
+
+</header>
+<div id="NewPjax-container">
+
+
+<!--    <div class="indexTitle">-->
+<!--        --><?php //if($this->is('index')): ?>
+<!--            <div class="Indexpost-title" itemprop="name headline">--><?php //$this->options->title(); ?><!--</div>-->
+<!--        --><?php //else: ?>
+<!--            <div class="Indexpost-title" itemprop="name headline">--><?php //$this->title(); ?><!--</div>-->
+<!--        --><?php //endif; ?>
+<!--    </div>-->
+    <?php $this->need('sideroom.php'); ?>
 
 </div>
 
-  </div>
+
+<div class="container">
+</div>
+<div id="pjax-container">

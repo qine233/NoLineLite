@@ -1,12 +1,18 @@
 <?php
 /**
- * “ 一款简单的主题，请设置完再看最后效果并修改，主题文件夹务必命名为Noline ”
- * @package NOLINE_2.0
+ * “ 一款简单的主题，主题文件夹务必命名为Noline,注意本主题仅适用于typecho 1.2版本系列，未针对1.3进行语法上的适配 ”
+ * @package NOLINELITE_1.0—Demo
  * @author QINE
+ * @version 1.0Demo
  * @link https://www.idkzr.com/
  */
 ?>
 <?php $this->need('public/header.php'); ?>
+<?php $this->need('sidebar.php'); ?>
+
+<div class="container">
+</div>
+<div id="pjax-container">
 
 <script type="text/javascript">
     //点击加载更多
@@ -42,9 +48,9 @@
         });
     });
 </script>
-<div class="content-all center-block">
 
-    <?php $this->need('sidebar.php'); ?>
+
+
     <div class="content">
 
         <div class="content-list">
@@ -89,7 +95,7 @@
         <?php $this->pageLink('点击查看更多','next'); ?>
     </div></div>
 <!--   <?php //$this->need('sidebar-right.php'); ?> -->
-</div>
+</div></div>
 </div><?php $this->need('public/footer.php'); ?>
 </div>
 
@@ -97,5 +103,5 @@
 
 </div>
 </div>
-
+</div></div>
 </body>

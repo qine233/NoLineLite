@@ -12,7 +12,7 @@
 
 <div class="content-all content-all-post">
     <?php $this->need('sidebar.php'); ?>
-    <div class="typecho-user-text">
+    <!-- <div class="typecho-user-text"> -->
         <!-- <div class="content-list"> -->
 
 

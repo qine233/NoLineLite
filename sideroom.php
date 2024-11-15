@@ -38,4 +38,3 @@
                              </div></div></div></div>
                 <div class="sideroom-blur" id="sideroom-blur">
                 </div>
-</div>
